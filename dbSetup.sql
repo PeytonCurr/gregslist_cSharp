@@ -83,17 +83,17 @@ CREATE TABLE
         imgUrl VARCHAR(500) NOT NULL,
         address VARCHAR(255) NOT NULL,
         createdAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        updatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        updatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     ) default charset utf8mb4 COMMENT 'emojis enabled 🦞';
 
 INSERT INTO
-    cars(
+    houses(
         beds,
         baths,
         floors,
         price,
         imgUrl,
-        address,
+        address
     )
 values (
         3,
